@@ -71,7 +71,7 @@ fun Portfolio() {
         modifier = Modifier
             .fillMaxWidth()
             .padding(12.dp)
-            .drawBehind {  }
+            .drawBehind { }
 
 
     ){
@@ -102,7 +102,7 @@ fun Portfolio() {
                 Image(painter = painterResource(id = R.drawable.insta), contentDescription = null,
                     modifier = Modifier.size(18.dp)
                 )
-                
+
                 Text(text = "/iharshitmisra", style = MaterialTheme.typography.bodyMedium,
                     modifier = Modifier.padding(horizontal = 8.dp))
             }
@@ -113,9 +113,9 @@ fun Portfolio() {
                     modifier = Modifier.size(18.dp)
                 )
                 Text(text = "/harshitmisra2249", style = MaterialTheme.typography.bodyMedium,
-                    modifier = Modifier.padding(horizontal = 8.dp)) 
+                    modifier = Modifier.padding(horizontal = 8.dp))
             }
-            
+
             Spacer(modifier = Modifier.height(12.dp))
             Button(onClick = { isOpen.value = !isOpen.value }) {
                 Text(text = "My Projects")
@@ -166,9 +166,15 @@ fun getProjectList():List<Project>{
         Project(name ="Media Player App", desc="listen music endlessly"),
         Project(name ="Gaming Media", desc="God of war Ragnarok lover"),
         Project(name ="Social Media App", desc="Connect with your friends"),
-        Project(name ="Media Player App", desc="listen music endlessly"),  
-        
+        Project(name ="Media Player App", desc="listen music endlessly"),
+
         )
+}
+
+@Composable
+fun ContactSelection() {
+
+
 }
 data class Project(
     val name:String,val desc:String
